@@ -1,0 +1,137 @@
+{
+  "nav": {
+    "about": "About",
+    "experience": "Experience",
+    "education": "Education",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "name": "Duygu Altunay",
+    "role": "Full Stack Developer · Computer Engineer",
+    "tagline": "I build web & mobile projects. I turn ideas into digital experiences.",
+    "projectsBtn": "Projects",
+    "downloadCvBtn": "Download CV",
+    "contactBtn": "Contact"
+  },
+  "about": {
+    "title": "About",
+    "body": "I am a senior Computer Engineering student at Selçuk University with a strong foundation in software development. Throughout my education, I have transformed theoretical knowledge into hands-on experience through diverse projects. I work as a freelancer across mobile and web development, desktop applications, animation production, media design, and video editing. Collaborating with individuals and teams from different industries has strengthened my technical skills as well as my communication and project management abilities. I approach development with analytical thinking, problem-solving, and user-centered design principles, and I adapt quickly to new technologies. My goal is to contribute tangible value in professional environments and stay actively involved in the ever-evolving technology ecosystem."
+  },
+  "education": {
+    "title": "Education",
+    "school": "Selçuk University",
+    "dept": "Computer Engineering",
+    "date": "2022 – 2026 (Ongoing)"
+  },
+  "experience": {
+    "title": "Experience",
+    "items": [
+      {
+        "company": "Turkish State Railways (TCDD)",
+        "role": "Computer Engineering Intern",
+        "date": "July 2024",
+        "bullets": [
+          "Observed and contributed to corporate infrastructure systems and software solutions.",
+          "Gained experience in data security, system optimization, and network management."
+        ]
+      },
+      {
+        "company": "URZ Medya",
+        "role": "Media & Software Development",
+        "date": "2025",
+        "bullets": [
+          "Worked on digital content production and supported web & mobile development workflows.",
+          "Delivered design-oriented solutions including video editing and animation outputs.",
+          "Focused on user experience and visual consistency across platforms."
+        ]
+      },
+      {
+        "company": "Koç Holding",
+        "role": "Computer Engineering Intern",
+        "date": "July 2025",
+        "bullets": [
+          "Supported software projects within the IT department.",
+          "Learned corporate project management and software testing practices.",
+          "Contributed to team coordination and delivery processes."
+        ]
+      },
+      {
+        "company": "Freelancer",
+        "role": "Software & Media Development",
+        "date": "Ongoing",
+        "bullets": [
+          "Deliver end-to-end projects across mobile apps, websites, desktop software, and media production."
+        ]
+      }
+    ]
+  },
+  "skills": {
+    "title": "Technical Skills",
+    "groups": [
+      {
+        "name": "Languages",
+        "items": [
+          "Python",
+          "JavaScript",
+          "C#",
+          "Java",
+          "C++",
+          "HTML",
+          "CSS",
+          "PHP"
+        ]
+      },
+      {
+        "name": "Frameworks / Platforms",
+        "items": [
+          "Laravel",
+          "Node.js",
+          "Flutter (Dart)"
+        ]
+      },
+      {
+        "name": "Databases",
+        "items": [
+          "MySQL",
+          "SQLite",
+          "Firebase"
+        ]
+      },
+      {
+        "name": "Tools",
+        "items": [
+          "Git",
+          "GitHub",
+          "VS Code",
+          "Visual Studio",
+          "Premiere Pro",
+          "After Effects",
+          "Photoshop"
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "Auto-fetched from my GitHub profile.",
+    "viewOnGitHub": "View on GitHub",
+    "loading": "Loading projects...",
+    "error": "Could not load projects.",
+    "expand": "Show projects",
+    "collapse": "Hide projects"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Have a project idea? Let's talk.",
+    "email": "Email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "instagram": "Instagram",
+    "x": "X"
+  },
+  "footer": {
+    "text": "© {year} Duygu Altunay. All rights reserved."
+  }
+}

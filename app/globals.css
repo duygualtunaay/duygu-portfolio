@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: dark; }
+
+html, body { height: 100%; }
+html { scroll-behavior: smooth; }
+
+body {
+  @apply bg-zinc-950 text-zinc-100 antialiased;
+}
+
+/* ---- Blue glow + subtle motion background helpers ---- */
+@keyframes floaty {
+  0%   { transform: translate3d(0, 0, 0) scale(1); }
+  50%  { transform: translate3d(10px, -14px, 0) scale(1.04); }
+  100% { transform: translate3d(0, 0, 0) scale(1); }
+}
+
+@keyframes floaty2 {
+  0%   { transform: translate3d(0, 0, 0) scale(1); }
+  50%  { transform: translate3d(-12px, 16px, 0) scale(1.03); }
+  100% { transform: translate3d(0, 0, 0) scale(1); }
+}
+
+.blue-blob {
+  position: absolute;
+  inset: auto;
+  width: 520px;
+  height: 520px;
+  border-radius: 9999px;
+  filter: blur(64px);
+  opacity: 0.16;
+  pointer-events: none;
+  background: radial-gradient(circle at 30% 30%, rgba(59,130,246,0.9), rgba(59,130,246,0));
+  animation: floaty 10s ease-in-out infinite;
+}
+
+.blue-blob-2 {
+  position: absolute;
+  inset: auto;
+  width: 420px;
+  height: 420px;
+  border-radius: 9999px;
+  filter: blur(56px);
+  opacity: 0.12;
+  pointer-events: none;
+  background: radial-gradient(circle at 30% 30%, rgba(96,165,250,0.9), rgba(96,165,250,0));
+  animation: floaty2 12s ease-in-out infinite;
+}
+
+/* nicer focus ring */
+a:focus-visible, button:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(59,130,246,0.45);
+  border-radius: 14px;
+}

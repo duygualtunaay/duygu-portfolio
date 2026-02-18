@@ -1,0 +1,137 @@
+{
+  "nav": {
+    "about": "Hakkımda",
+    "experience": "Deneyim",
+    "education": "Eğitim",
+    "skills": "Yetenekler",
+    "projects": "Projeler",
+    "contact": "İletişim"
+  },
+  "hero": {
+    "name": "Duygu Altunay",
+    "role": "Full Stack Developer · Bilgisayar Mühendisi",
+    "tagline": "Web & mobil projeler geliştiriyorum. Hayalleri dijitale çeviren medya çalışmaları yapıyorum.",
+    "projectsBtn": "Projeler",
+    "downloadCvBtn": "CV İndir",
+    "contactBtn": "İletişim"
+  },
+  "about": {
+    "title": "Hakkımda",
+    "body": "Selçuk Üniversitesi Bilgisayar Mühendisliği son sınıf öğrencisiyim. Eğitimim süresince yazılım geliştirme alanında kapsamlı bir bilgi birikimi edinmiş olup, bu süreçte edindiğim teorik bilgileri çeşitli projeler aracılığıyla uygulama fırsatı buldum. Mobil uygulama geliştirme, web geliştirme, masaüstü yazılım geliştirme, animasyon üretimi, medya tasarımı ve video düzenleme/kurgu alanlarında aktif olarak freelancer olarak çalışmaktayım. Farklı sektörlerden bireyler ve ekiplerle yürüttüğüm projeler, hem teknik becerilerimi hem de proje yönetimi ve iletişim yetkinliklerimi geliştirmeme olanak sağlamıştır. Yazılım geliştirme süreçlerinde analitik düşünme, problem çözme ve kullanıcı odaklı tasarım ilkelerini benimsemekteyim. Yeni teknolojilere hızla adapte olabilen, kendini sürekli geliştirmeyi hedefleyen, yenilikçi ve yaratıcı bir mühendisim. Amacım; bilgi birikimimi ve teknik yetkinliğimi profesyonel iş ortamlarında kullanarak, kurumsal hedeflere değer katmak ve sürekli gelişen teknoloji ekosisteminde etkin bir rol üstlenmektir."
+  },
+  "education": {
+    "title": "Eğitim",
+    "school": "Selçuk Üniversitesi",
+    "dept": "Bilgisayar Mühendisliği",
+    "date": "2022 – 2026 (Devam ediyor)"
+  },
+  "experience": {
+    "title": "Deneyim",
+    "items": [
+      {
+        "company": "Türkiye Cumhuriyeti Devlet Demiryolları (TCDD)",
+        "role": "Bilgisayar Mühendisliği Stajyeri",
+        "date": "Temmuz 2024",
+        "bullets": [
+          "Kurumsal altyapı sistemleri ve yazılım çözümlerine yönelik gözlem ve uygulama çalışmaları gerçekleştirdim.",
+          "Veri güvenliği, sistem optimizasyonu ve ağ yönetimi konularında deneyim kazandım."
+        ]
+      },
+      {
+        "company": "URZ Medya",
+        "role": "Medya ve Yazılım Geliştirme",
+        "date": "2025",
+        "bullets": [
+          "Dijital içerik üretimi ile web ve mobil uygulama geliştirme süreçlerinde görev aldım.",
+          "Video kurgu, animasyon ve tasarım odaklı çözümler geliştirdim.",
+          "Kullanıcı deneyimi ve görsel bütünlüğü önceliklendirdim."
+        ]
+      },
+      {
+        "company": "Koç Holding",
+        "role": "Bilgisayar Mühendisliği Stajyeri",
+        "date": "Temmuz 2025",
+        "bullets": [
+          "BT departmanında yazılım projelerine destek oldum.",
+          "Kurumsal proje yönetimi ve test süreçlerinde deneyim edindim.",
+          "Ekip içi koordinasyona katkı sağladım."
+        ]
+      },
+      {
+        "company": "Freelancer",
+        "role": "Yazılım ve Medya Geliştirme",
+        "date": "Devam ediyor",
+        "bullets": [
+          "Mobil uygulama, web sitesi, masaüstü yazılım ve medya prodüksiyonu projelerinde uçtan uca teslim süreçlerini yürütüyorum."
+        ]
+      }
+    ]
+  },
+  "skills": {
+    "title": "Teknik Yetenekler",
+    "groups": [
+      {
+        "name": "Yazılım Dilleri",
+        "items": [
+          "Python",
+          "JavaScript",
+          "C#",
+          "Java",
+          "C++",
+          "HTML",
+          "CSS",
+          "PHP"
+        ]
+      },
+      {
+        "name": "Framework / Platform",
+        "items": [
+          "Laravel",
+          "Node.js",
+          "Flutter (Dart)"
+        ]
+      },
+      {
+        "name": "Veritabanı",
+        "items": [
+          "MySQL",
+          "SQLite",
+          "Firebase"
+        ]
+      },
+      {
+        "name": "Araçlar",
+        "items": [
+          "Git",
+          "GitHub",
+          "VS Code",
+          "Visual Studio",
+          "Premiere Pro",
+          "After Effects",
+          "Photoshop"
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "title": "Projeler",
+    "subtitle": "GitHub hesabımdan otomatik çekiliyor.",
+    "viewOnGitHub": "GitHub’da Gör",
+    "loading": "Projeler yükleniyor...",
+    "error": "Projeler yüklenemedi.",
+    "expand": "Projeleri göster",
+    "collapse": "Projeleri gizle"
+  },
+  "contact": {
+    "title": "İletişim",
+    "subtitle": "Bir proje fikrin varsa konuşalım.",
+    "email": "E-posta",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "instagram": "Instagram",
+    "x": "X"
+  },
+  "footer": {
+    "text": "© {year} Duygu Altunay. Tüm hakları saklıdır."
+  }
+}
