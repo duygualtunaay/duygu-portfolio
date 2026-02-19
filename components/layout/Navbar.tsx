@@ -1,94 +1,59 @@
 "use client";
 
-import { useState } from "react";
-import Link from "next/link";
-import { Menu, X } from "lucide-react";
+import {usePathname} from "next/navigation";
+import {useTranslations} from "next-intl";
 
 export default function Navbar() {
-  const [open, setOpen] = useState(false);
+  const pathname = usePathname();
+  const t = useTranslations("nav");
 
-  const menuItems = [
-    { name: "Hakkımda", href: "#hakkimda" },
-    { name: "Deneyim", href: "#deneyim" },
-    { name: "Eğitim", href: "#egitim" },
-    { name: "Yetenekler", href: "#yetenekler" },
-    { name: "Projeler", href: "#projeler" },
-  ];
+  const isTR = pathname?.startsWith("/tr");
+  const nextLocale = isTR ? "en" : "tr";
+  const nextPath =
+    pathname?.replace(/^\/(tr|en)/, `/${nextLocale}`) || `/${nextLocale}`;
 
   return (
-    <nav className="fixed top-0 w-full z-50 bg-black/70 backdrop-blur-md border-b border-white/10">
-      <div className="max-w-6xl mx-auto px-4">
-        <div className="flex justify-between items-center h-16">
-
-          {/* Logo */}
-          <div className="text-white font-bold text-lg tracking-wide">
+    <>
+      {/* FIXED NAVBAR */}
+      <header className="fixed top-0 left-0 right-0 z-50 border-b border-white/10 bg-zinc-950/80 backdrop-blur">
+        <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+          <a
+            href="#top"
+            className="font-semibold tracking-tight hover:text-white"
+          >
             Duygu Altunay
-          </div>
+          </a>
 
-          {/* Desktop Menu */}
-          <div className="hidden md:flex gap-3">
-            {menuItems.map((item, index) => (
-              <Link
-                key={index}
-                href={item.href}
-                className="
-                  px-4 py-2
-                  rounded-full
-                  text-sm
-                  border border-white/20
-                  bg-white/5
-                  hover:bg-gradient-to-r
-                  hover:from-blue-500/20
-                  hover:to-purple-500/20
-                  hover:border-white/40
-                  transition-all
-                  duration-300
-                  text-white
-                  shadow-sm
-                  hover:shadow-blue-500/20
-                "
+          <nav className="flex items-center gap-4 text-sm text-zinc-300">
+            {[
+              ["#about", t("about")],
+              ["#experience", t("experience")],
+              ["#education", t("education")],
+              ["#skills", t("skills")],
+              ["#projects", t("projects")],
+              ["#contact", t("contact")]
+            ].map(([href, label]) => (
+              <a
+                key={href}
+                href={href}
+                className="hover:text-white hover:drop-shadow-[0_0_14px_rgba(59,130,246,0.35)]"
               >
-                {item.name}
-              </Link>
+                {label}
+              </a>
             ))}
-          </div>
 
-          {/* Mobile Button */}
-          <div className="md:hidden text-white">
-            <button onClick={() => setOpen(!open)}>
-              {open ? <X size={26} /> : <Menu size={26} />}
-            </button>
-          </div>
-        </div>
-      </div>
-
-      {/* Mobile Menu */}
-      {open && (
-        <div className="md:hidden bg-black/95 backdrop-blur-md px-6 pb-6 pt-2 space-y-3 border-t border-white/10">
-          {menuItems.map((item, index) => (
-            <Link
-              key={index}
-              href={item.href}
-              onClick={() => setOpen(false)}
-              className="
-                block
-                px-4 py-3
-                rounded-xl
-                border border-white/20
-                bg-white/5
-                hover:bg-gradient-to-r
-                hover:from-blue-500/20
-                hover:to-purple-500/20
-                transition-all
-                duration-300
-                text-white
-              "
+            <a
+              href={nextPath}
+              className="rounded-xl border border-white/10 px-3 py-1 hover:border-blue-500/40 hover:bg-blue-500/10 hover:text-white"
             >
-              {item.name}
-            </Link>
-          ))}
+              {nextLocale.toUpperCase()}
+            </a>
+          </nav>
         </div>
-      )}
-    </nav>
+      </header>
+
+      {/* NAVBAR HEIGHT OFFSET */}
+      <div className="h-[72px]" />
+    </>
   );
 }
